@@ -1,0 +1,15 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'console'
+  group_wait: 10s
+  group_interval: 10m
+  repeat_interval: 1h
+
+receivers:
+  - name: 'console'
+    webhook_configs:
+      - url: 'http://localhost:9090/-/reload'  # placeholder; you can add Slack or email integrations
+
+inhibit_rules: []
