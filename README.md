@@ -1,3 +1,11 @@
+Author
+
+Utkarsh Nandurkar
+LinkedIn: https://linkedin.com/in/utkarsh-nandurkar-1533821b0
+
+Portfolio: https://utkarsh01nandurkar.github.io
+
+
 # monitoring-stack
 
 Simple monitoring stack demo: Prometheus + Grafana + Alertmanager + Node Exporter using Docker Compose.
