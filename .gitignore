@@ -1,0 +1,5 @@
+*.log
+*.tmp
+.env
+grafana_data/
+prometheus_data/
