@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+  external_labels:
+    monitor: 'utk-monitor'
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'node-exporter'
+    static_configs:
+      # if node-exporter uses host networking, Prometheus should point to host IP (localhost) and port 9100
+      - targets: ['localhost:9100']
+
+rule_files:
+  - "alert_rules.yml"   # optional file (create if you add alerts)
